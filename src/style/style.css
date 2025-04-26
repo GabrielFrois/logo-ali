@@ -200,3 +200,15 @@ body {
 #detalhes-imagem-container img:hover {
     transform: scale(1.05);
 }
+
+#map-container {
+    display: flex;
+    justify-content: center; /* Centraliza o mapa horizontalmente */
+    align-items: center; /* Centraliza o mapa verticalmente */
+    height: 100vh; /* Faz o contêiner ocupar toda a altura da tela */
+}
+
+#map {
+    height: 400px; /* Ajuste o valor conforme necessário */
+    width: 60%;
+}

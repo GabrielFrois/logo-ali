@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <title>Viagens</title>
 </head>
 <body>
@@ -39,6 +40,9 @@
         <h2 id="detalhes-titulo"></h2>
         <div id="detalhes-imagem-container" style="margin: 20px 0;"></div> <!-- Container para múltiplas imagens -->
         <p id="detalhes-texto"></p>
+        <div id="map-container">
+            <div id="map"></div> <!-- O mapa em si -->
+        </div>
         <button onclick="voltarParaViagens()" class="botao-voltar">Voltar</button>
     </section>
 
@@ -54,5 +58,6 @@
         document.getElementById('viagens').scrollIntoView({ behavior: 'smooth' });
     }
     </script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>
