@@ -12,6 +12,13 @@ Este projeto é uma página web construída com **HTML**, **CSS** e **JavaScript
 - **CSS**: Para o design e estilização das páginas.
 - **JavaScript**: Para interatividade, como mapas dinâmicos e galerias de fotos.
 
+## Protótipo Figma
+## Página Inicial do Site
+![Protótipo da página principal do site](/src/img/figma/pagina-principal)
+
+## Página de Conteúdo do Diário
+![Protótipo das páginas do diário](/src/img/figma/pagina-conteudo)
+
 ## Implementação de Mapas
 Exemplo de código que será utilizado para implementar mapas ao projeto:
 ```html
