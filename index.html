@@ -7,20 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Logo Ali</title>
+    <title>Viagens</title>
 </head>
 <body>
     <header class="cabecalho">
-        <img src="./src/img/logo-fundo-azul.png" class="logo" href="#home">
-        <p href="#viagens">Viagens</p>
+        <img src="./src/img/logo-fundo-azul.png" class="logo" id="logo" alt="Logo Logo Ali">
+        <p id="cabecalho-viagens">Viagens</p>
     </header>
 
-    <section id="home">
-
+    <section id="home" class="container">
+        <img src="./src/img/perfil.jpeg" class="foto-perfil" alt="Foto de perfil do Gabriel">
+        <div class="texto">
+            <h2>Olá, eu sou o Gabriel</h2>
+            <p>
+                Bem-vindo ao projeto Logo Ali, onde estarei registrando as minhas viagens!<br><br>
+                Ainda não visitei muitos lugares, mas a ideia é ir atualizando este diário cada vez mais.<br><br>
+                Neste blog, você vai encontrar relatos das minhas viagens, dicas de destinos, fotos que capturam a essência de cada lugar e, claro, as localizações para te inspirar a seguir os mesmos caminhos.
+            </p>            
+        </div>
     </section>
 
     <section id="viagens">
-
+        <h2 class="titulo-viagens">Minhas Viagens</h2>
+        <div class="linha-decorativa"></div>
+        <div id="lista-viagens" class="lista-viagens">
+            <!-- As viagens vão ser carregadas aqui via JavaScript -->
+        </div>
     </section>
+
+    <section id="detalhes-viagem" style="display:none;">
+        <h2 id="detalhes-titulo"></h2>
+        <div id="detalhes-imagem-container" style="margin: 20px 0;"></div> <!-- Container para múltiplas imagens -->
+        <p id="detalhes-texto"></p>
+        <button onclick="voltarParaViagens()" class="botao-voltar">Voltar</button>
+    </section>
+
+    <script src="./src/script/script.js"></script>
+
+    <script>
+    // Função para voltar para a lista de viagens
+    function voltarParaViagens() {
+        document.getElementById('home').style.display = 'flex';
+        document.getElementById('viagens').style.display = 'block';
+        document.getElementById('detalhes-viagem').style.display = 'none';
+
+        document.getElementById('viagens').scrollIntoView({ behavior: 'smooth' });
+    }
+    </script>
 </body>
 </html>
