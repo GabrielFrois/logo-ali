@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: #0068A5;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades (esquerda e direita) */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer; /* Opcional: para mostrar que o texto é clicável */
+}
+
+p {
+    color: white; /* Para dar visibilidade ao texto, já que o fundo é azul */
+    font-size: 20px; /* Altere o tamanho da fonte conforme desejado */
+    font-family: "Roboto", sans-serif;
+    cursor: pointer; /* Opcional: para mostrar que o texto é clicável */
+}
+
+body {
+    background: linear-gradient(to bottom, #9CBFE5 20%, #CFE5E2 70%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover; /* Garantir que o gradiente cubra toda a tela */
+}
