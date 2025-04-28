@@ -8,16 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <title>Viagens</title>
+
+    <title>Logo Ali</title>
 </head>
+
 <body>
     <header class="cabecalho">
         <img src="./src/img/logo-fundo-azul.png" class="logo" id="logo" alt="Logo Logo Ali">
         <p id="cabecalho-viagens">Viagens</p>
     </header>
 
+    <!-- Seção "Home" de apresentação -->
     <section id="home" class="container">
         <img src="./src/img/perfil.jpeg" class="foto-perfil" alt="Foto de perfil do Gabriel">
+        
         <div class="texto">
             <h2>Olá, eu sou o Gabriel</h2>
             <p>
@@ -28,36 +32,54 @@
         </div>
     </section>
 
+    <!-- Seção de lista de viagens -->
     <section id="viagens">
         <h2 class="titulo-viagens">Minhas Viagens</h2>
-        <div class="linha-decorativa"></div>
+        <div class="linha-decorativa"></div> <!-- Linha decorativa separando o título da lista -->
+        
         <div id="lista-viagens" class="lista-viagens">
-            <!-- As viagens vão ser carregadas aqui via JavaScript -->
+            <!-- As viagens serão carregadas dinamicamente via JavaScript -->
         </div>
     </section>
 
+    <!-- Seção de detalhes de uma viagem específica (inicialmente escondida) -->
     <section id="detalhes-viagem" style="display:none;">
-        <h2 id="detalhes-titulo"></h2>
-        <div id="detalhes-imagem-container" style="margin: 20px 0;"></div> <!-- Container para múltiplas imagens -->
+        <h2 id="detalhes-titulo"></h2> <!-- Título dinâmico da viagem -->
+        
+        <!-- Container para imagens da viagem -->
+        <div id="detalhes-imagem-container" style="margin: 20px 0;"></div>
+        
+        <!-- Texto descritivo da viagem -->
         <p id="detalhes-texto"></p>
+        
+        <!-- Container para o mapa -->
         <div id="map-container">
-            <div id="map"></div> <!-- O mapa em si -->
+            <div id="map"></div> <!-- O mapa gerado com Leaflet será exibido aqui -->
         </div>
+        
+        <!-- Botão para voltar à lista de viagens -->
         <button onclick="voltarParaViagens()" class="botao-voltar">Voltar</button>
     </section>
 
     <script src="./src/script/script.js"></script>
-
+    
+    <!-- Script adicional com a função de voltar para a lista de viagens -->
     <script>
-    // Função para voltar para a lista de viagens
+    // Função que volta para a lista de viagens ao clicar no botão "Voltar"
     function voltarParaViagens() {
+        // Exibe a seção "home"
         document.getElementById('home').style.display = 'flex';
+        // Exibe a lista de viagens
         document.getElementById('viagens').style.display = 'block';
+        // Esconde os detalhes da viagem
         document.getElementById('detalhes-viagem').style.display = 'none';
 
+        // Faz a página rolar suavemente até a seção "viagens"
         document.getElementById('viagens').scrollIntoView({ behavior: 'smooth' });
     }
     </script>
+
+    <!-- Script da biblioteca Leaflet (usada para renderizar mapas) -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>
