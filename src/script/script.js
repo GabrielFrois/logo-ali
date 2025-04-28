@@ -197,105 +197,138 @@ const viagens = [
     },
 ];
 
-// Quando clicar na logo, volta para o topo da home
+// Seleciona o elemento com o ID 'logo' e o armazena na variável 'logo'
 const logo = document.getElementById('logo');
+// Verifica se o elemento 'logo' existe na página
 if (logo) {
+    // Adiciona um evento de clique ao elemento 'logo'
     logo.onclick = () => {
+        // Exibe a seção com ID 'home' usando display 'flex'
         document.getElementById('home').style.display = 'flex';
+        // Exibe a seção com ID 'viagens' usando display 'block'
         document.getElementById('viagens').style.display = 'block';
+        // Oculta a seção com ID 'detalhes-viagem' usando display 'none'
         document.getElementById('detalhes-viagem').style.display = 'none';
-
+        // Faz a rolagem suave da página até o topo
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 }
 
-// Quando clicar no botão "Viagens" no cabeçalho
-const botaoViagensCabecalho = document.querySelector('.cabecalho p');
-if (botaoViagensCabecalho) {
-    botaoViagensCabecalho.onclick = () => {
-        document.getElementById('home').style.display = 'flex';
-        document.getElementById('viagens').style.display = 'block';
-        document.getElementById('detalhes-viagem').style.display = 'none';
 
+// Seleciona o primeiro elemento <p> dentro de um elemento com a classe 'cabecalho' e o armazena na variável 'botaoViagensCabecalho'
+const botaoViagensCabecalho = document.querySelector('.cabecalho p');
+// Verifica se o botão foi encontrado no DOM
+if (botaoViagensCabecalho) {
+    // Adiciona um evento de clique ao botão
+    botaoViagensCabecalho.onclick = () => {
+        // Garante que a seção 'home' esteja visível com display 'flex'
+        document.getElementById('home').style.display = 'flex';
+        // Exibe a seção 'viagens' com display 'block'
+        document.getElementById('viagens').style.display = 'block';
+        // Oculta a seção 'detalhes-viagem' com display 'none'
+        document.getElementById('detalhes-viagem').style.display = 'none';
+        // Faz a rolagem suave até a seção 'viagens'
         document.getElementById('viagens').scrollIntoView({ behavior: 'smooth' });
     };
 }
 
+
 // Mostrar detalhes da viagem
+// Função para exibir os detalhes de uma viagem selecionada
 function mostrarDetalhesViagem(viagem) {
+    // Oculta a seção 'home'
     document.getElementById('home').style.display = 'none';
+    // Oculta a seção 'viagens'
     document.getElementById('viagens').style.display = 'none';
+    // Exibe a seção de 'detalhes-viagem'
     document.getElementById('detalhes-viagem').style.display = 'block';
-
+    // Atualiza o título da seção de detalhes com o nome da viagem
     document.getElementById('detalhes-titulo').textContent = viagem.nome;
-    document.getElementById('detalhes-texto').innerHTML = viagem.detalhes; // Estilização via HTML
-
-    // Limpa as imagens antigas, se houver
+    // Insere o conteúdo detalhado da viagem no elemento de texto.
+    // Usa innerHTML para permitir formatação (como <strong>, <br> etc.)
+    document.getElementById('detalhes-texto').innerHTML = viagem.detalhes;
+    // Seleciona o container onde as imagens da viagem serão exibidas
     const detalhesImagemContainer = document.getElementById('detalhes-imagem-container');
-    detalhesImagemContainer.innerHTML = '';  // Limpar qualquer imagem anterior
-
-    // Exibir todas as imagens (caso seja um array)
+    // Limpa o conteúdo anterior (caso a função seja chamada mais de uma vez)
+    detalhesImagemContainer.innerHTML = '';
+    // Percorre o array de URLs de imagens da viagem
     viagem.imagem.forEach(imagem => {
+        // Cria um novo elemento <img> para cada imagem
         const imgElement = document.createElement('img');
-        imgElement.src = imagem;
-        imgElement.alt = viagem.nome;
-        imgElement.style.width = '100%';  // Ajustar conforme necessário
-        imgElement.style.height = 'auto';  // Ajustar conforme necessário
-        detalhesImagemContainer.appendChild(imgElement);  // Adiciona a imagem no container
+        imgElement.src = imagem; // Define o caminho da imagem
+        imgElement.alt = viagem.nome; // Texto alternativo com o nome da viagem
+        // Define estilo de largura total e altura automática para manter a proporção
+        imgElement.style.width = '100%';
+        imgElement.style.height = 'auto';
+        // Adiciona a imagem criada ao container
+        detalhesImagemContainer.appendChild(imgElement);
     });
-
-    // Atualizar o mapa (se quiser integrar com Leaflet aqui depois)
+    // Chama a função que atualiza o mapa com base na viagem selecionada
     atualizarMapa(viagem);
-
+    // Faz a rolagem suave até o topo da página
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Carregar viagens dinamicamente
-function carregarViagens() {
-    const lista = document.getElementById('lista-viagens');
-    if (!lista) return;
 
+// Função para carregar dinamicamente a lista de viagens na interface
+function carregarViagens() {
+    // Seleciona o elemento onde os botões das viagens serão inseridos
+    const lista = document.getElementById('lista-viagens');
+    // Se o elemento não for encontrado, a função é encerrada
+    if (!lista) return;
+    // Percorre cada objeto de viagem no array 'viagens'
     viagens.forEach(viagem => {
+        // Cria um novo botão para representar a viagem
         const botao = document.createElement('button');
+        // Adiciona uma classe ao botão para fins de estilo
         botao.className = "botao-viagem";
+        // Insere o conteúdo HTML no botão, com nome, data e local da viagem
         botao.innerHTML = `
             <strong>${viagem.nome}</strong>
             <small>${viagem.data}</small>
             <small>${viagem.local}</small>
         `;
+        // Define o comportamento de clique: mostrar os detalhes da viagem correspondente
         botao.onclick = () => mostrarDetalhesViagem(viagem);
+        // Adiciona o botão à lista de viagens na página
         lista.appendChild(botao);
     });
 }
 
-// Inicializa o mapa
+
+// Variável global que armazenará a instância do mapa Leaflet
 let map;
-
+// Função responsável por inicializar o mapa na tela
 function inicializarMapa() {
+    // Cria o mapa dentro do elemento com ID 'map' e centraliza em uma coordenada inicial (latitude, longitude) com nível de zoom 12
     map = L.map('map').setView([-8.1265, -34.9021], 12);
-
+    // Adiciona camadas de mapa base do OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        // Define a atribuição de créditos para o OpenStreetMap
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    }).addTo(map); // Adiciona a camada ao mapa
 }
-
-// Atualizar marcadores do mapa
+// Função que atualiza os marcadores do mapa com base na viagem selecionada
 function atualizarMapa(viagem) {
+    // Verifica se o mapa já foi inicializado; se não, chama a função de inicialização
     if (!map) {
-        inicializarMapa();  // Inicializa o mapa se ainda não estiver inicializado
+        inicializarMapa();
     }
-
+    // Remove todos os marcadores antigos do mapa
     map.eachLayer(layer => {
         if (layer instanceof L.Marker) {
-            map.removeLayer(layer); // Remove todos os marcadores antigos
+            map.removeLayer(layer); // Remove qualquer marcador existente
         }
     });
-
+    // Adiciona novos marcadores com base nos dados da viagem
     viagem.marcadores.forEach(marcador => {
+        // Cria um novo marcador na coordenada especificada e adiciona ao mapa
         L.marker(marcador.coordenadas).addTo(map)
-          .bindPopup(`<b>${marcador.nome}</b><br>${marcador.descricao}`);
+            // Adiciona um pop-up ao marcador com nome e descrição
+            .bindPopup(`<b>${marcador.nome}</b><br>${marcador.descricao}`);
     });
 }
+
 
 // Inicializa ao carregar a página
 carregarViagens();
