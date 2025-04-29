@@ -238,11 +238,14 @@ body {
 
 .coluna-imagens img {
     width: 100%;
+    max-width: 200px;
+    aspect-ratio: 9 / 16; /* Largura / altura */
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    object-fit: cover;
     transition: transform 0.3s ease;
 }
+
 
 .coluna-imagens img:hover {
     transform: scale(1.05);
