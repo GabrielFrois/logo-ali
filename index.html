@@ -77,10 +77,11 @@
             <div class="linha-decorativa-p"></div>
             <div id="map"></div>
         </div>
-    
-        <!-- Botão para voltar -->
-        <button onclick="voltarParaViagens()" class="botao-voltar">Voltar</button>
     </section>
+
+    <div id="botao-voltar-container">
+        <button onclick="voltarParaViagens()" class="botao-voltar">Voltar</button>
+    </div>
 
     <script src="./src/script/script.js"></script>
     
@@ -94,6 +95,8 @@
         document.getElementById('viagens').style.display = 'block';
         // Esconde os detalhes da viagem
         document.getElementById('detalhes-viagem').style.display = 'none';
+
+        document.getElementById('botao-voltar-container').style.display = 'none';
 
         // Faz a página rolar suavemente até a seção "viagens"
         document.getElementById('viagens').scrollIntoView({ behavior: 'smooth' });

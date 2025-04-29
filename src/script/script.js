@@ -223,6 +223,7 @@ function mostrarDetalhesViagem(viagem) {
     document.getElementById('home').style.display = 'none';
     document.getElementById('viagens').style.display = 'none';
     document.getElementById('detalhes-viagem').style.display = 'block';
+    document.getElementById('botao-voltar-container').style.display = 'block';
     document.getElementById('detalhes-titulo').textContent = viagem.nome;
     document.getElementById('detalhes-data').textContent = viagem.data;
     document.getElementById('detalhes-local').textContent = viagem.local;
