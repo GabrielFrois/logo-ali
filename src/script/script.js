@@ -224,6 +224,8 @@ function mostrarDetalhesViagem(viagem) {
     document.getElementById('viagens').style.display = 'none';
     document.getElementById('detalhes-viagem').style.display = 'block';
     document.getElementById('detalhes-titulo').textContent = viagem.nome;
+    document.getElementById('detalhes-data').textContent = viagem.data;
+    document.getElementById('detalhes-local').textContent = viagem.local;
     document.getElementById('detalhes-texto').innerHTML = viagem.detalhes;
 
 

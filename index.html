@@ -35,7 +35,7 @@
     <!-- Seção de lista de viagens -->
     <section id="viagens">
         <h2 class="titulo-viagens">Minhas Viagens</h2>
-        <div class="linha-decorativa"></div> <!-- Linha decorativa separando o título da lista -->
+        <div class="linha-decorativa-g"></div> <!-- Linha decorativa separando o título da lista -->
         
         <div id="lista-viagens" class="lista-viagens">
             <!-- As viagens serão carregadas dinamicamente via JavaScript -->
@@ -44,6 +44,15 @@
 
     <!-- Seção de detalhes de uma viagem específica (inicialmente escondida) -->
     <section id="detalhes-viagem" style="display:none;">
+        <div class="detalhes-cabecalho">
+            <h2 id="detalhes-titulo"></h2>
+            <div class="linha-decorativa-g"></div>
+            <p id="detalhes-data"></p>
+            <div class="linha-decorativa-p"></div>
+            <p id="detalhes-local"></p>
+            <div class="linha-decorativa-m"></div>
+        </div>
+
         <div class="layout-detalhes">
             <!-- Coluna esquerda de imagens -->
             <div class="coluna-imagens" id="imagens-esquerda">
@@ -51,8 +60,8 @@
             </div>
     
             <!-- Texto central -->
+             
             <div class="coluna-texto">
-                <h2 id="detalhes-titulo"></h2>
                 <p id="detalhes-texto"></p>
             </div>
     
@@ -64,6 +73,8 @@
     
         <!-- Container do mapa -->
         <div id="map-container">
+            <h2>Mapa</h2>
+            <div class="linha-decorativa-p"></div>
             <div id="map"></div>
         </div>
     
