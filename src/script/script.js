@@ -6,8 +6,11 @@ const viagens = [
         local: 'Jaboatão dos Guararapes - PE', 
         detalhes: `
             Em um domingo ensolarado, acordei cedo e segui para a rodoviária, onde peguei o ônibus rumo ao Aeroporto de Guarulhos. 
+            
             De lá, embarquei em um voo de aproximadamente três horas com destino ao Aeroporto de Recife. 
+ 
             Ao chegar, me hospedei em um hotel à beira-mar, com uma vista deslumbrante para as águas da Praia de Piedade. 
+
             À noite, aproveitei para visitar a famosa feirinha de Boa Viagem, caminhei pelo calçadão e explorei o Parque Dona Lindu, encerrando o dia com a brisa agradável do litoral pernambucano.
         `,
         imagem: [

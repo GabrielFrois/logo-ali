@@ -181,7 +181,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     margin-top: 15px;
-    max-width: 800px; /* ou até 500px, se quiser mais estreito */
+    max-width: 900px; /* ou até 500px, se quiser mais estreito */
 }
 
 /* Ajuste da tela de detalhes */
@@ -190,6 +190,15 @@ body {
     line-height: 1.6;
     color: #333;
 }
+
+#detalhes-viagem #detalhes-texto {
+    font-size: 24px; /* Altere aqui para o tamanho desejado */
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    white-space: pre-line;
+}
+
 
 /* Container de imagens de viagem (ajuste para múltiplas imagens) */
 #detalhes-imagem-container {
