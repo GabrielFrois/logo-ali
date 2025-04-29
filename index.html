@@ -44,20 +44,30 @@
 
     <!-- Seção de detalhes de uma viagem específica (inicialmente escondida) -->
     <section id="detalhes-viagem" style="display:none;">
-        <h2 id="detalhes-titulo"></h2> <!-- Título dinâmico da viagem -->
-        
-        <!-- Container para imagens da viagem -->
-        <div id="detalhes-imagem-container" style="margin: 20px 0;"></div>
-        
-        <!-- Texto descritivo da viagem -->
-        <p id="detalhes-texto"></p>
-        
-        <!-- Container para o mapa -->
-        <div id="map-container">
-            <div id="map"></div> <!-- O mapa gerado com Leaflet será exibido aqui -->
+        <div class="layout-detalhes">
+            <!-- Coluna esquerda de imagens -->
+            <div class="coluna-imagens" id="imagens-esquerda">
+                <!-- Imagens serão adicionadas dinamicamente via JS se desejar -->
+            </div>
+    
+            <!-- Texto central -->
+            <div class="coluna-texto">
+                <h2 id="detalhes-titulo"></h2>
+                <p id="detalhes-texto"></p>
+            </div>
+    
+            <!-- Coluna direita de imagens -->
+            <div class="coluna-imagens" id="imagens-direita">
+                <!-- Imagens serão adicionadas dinamicamente via JS se desejar -->
+            </div>
         </div>
-        
-        <!-- Botão para voltar à lista de viagens -->
+    
+        <!-- Container do mapa -->
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    
+        <!-- Botão para voltar -->
         <button onclick="voltarParaViagens()" class="botao-voltar">Voltar</button>
     </section>
 

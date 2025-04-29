@@ -226,16 +226,31 @@ function mostrarDetalhesViagem(viagem) {
     document.getElementById('detalhes-titulo').textContent = viagem.nome;
     document.getElementById('detalhes-texto').innerHTML = viagem.detalhes;
 
-    const detalhesImagemContainer = document.getElementById('detalhes-imagem-container');
-    detalhesImagemContainer.innerHTML = '';
-    viagem.imagem.forEach(imagem => {
-        const imgElement = document.createElement('img');
-        imgElement.src = imagem;
-        imgElement.alt = viagem.nome;
-        imgElement.style.width = '100%';
-        imgElement.style.height = 'auto';
-        detalhesImagemContainer.appendChild(imgElement);
+
+    const colunaEsquerda = document.getElementById('imagens-esquerda');
+    const colunaDireita = document.getElementById('imagens-direita');
+
+    // Limpa imagens antigas
+    colunaEsquerda.innerHTML = '';
+    colunaDireita.innerHTML = '';
+
+    // Divide as imagens alternadamente entre esquerda e direita
+    viagem.imagem.forEach((imagem, index) => {
+        const img = document.createElement('img');
+        img.src = imagem;
+        img.alt = viagem.nome;
+    
+        // Aplica espaçamento crescente acima da imagem
+        img.style.marginTop = `${index * 100}px`; // 20px por nível de "escada"
+    
+        if (index % 2 === 0) {
+            colunaEsquerda.appendChild(img);
+        } else {
+            colunaDireita.appendChild(img);
+        }
     });
+    
+
 
     atualizarMapaComViagem(viagem); // ✅ Chamada da função corrigida
     window.scrollTo({ top: 0, behavior: 'smooth' });
