@@ -41,11 +41,20 @@ const viagens = [
         data: '16/12/2024', 
         local: 'Jaboatão dos Guararapes - PE', 
         detalhes: `
-            Na manhã de hoje, fui até a Reserva do Paiva, onde tive a oportunidade de explorar uma praia deslumbrante, rodeada por recifes belíssimos em todas as direções. A água estava calma e cristalina, criando o ambiente perfeito para passar a manhã toda. No início da tarde, aproveitei para fazer uma caminhada pelo Parque da Lagoa, também localizado na Reserva do Paiva.
-            Mais tarde, almocei no shopping de Jaboatão, onde experimentei um lanche de coração de galinha da franquia local Laça Burguer, uma verdadeira delícia.
+            Na manhã de hoje, fui até a Reserva do Paiva, onde tive a oportunidade de explorar uma praia deslumbrante, rodeada por recifes belíssimos em todas as direções. A água estava calma e cristalina, criando o ambiente perfeito para passar a manhã toda. 
+            
+            No início da tarde, aproveitei para fazer uma caminhada pelo Parque da Lagoa, também localizado na Reserva do Paiva. 
+
+            Mais tarde, almocei no shopping de Jaboatão, onde experimentei um lanche de coração de galinha da franquia local Laça Burguer, uma verdadeira delícia. 
+
             Para finalizar o dia, fui ao restaurante e bar Caricatura, onde me deliciei com um rodízio de pizzas. Uma noite perfeita para encerrar o dia!
         `, 
-        imagem: ['imagens/viagem2.jpg'],
+        imagem: [
+            './src/img/16-12-24/praia-paiva.jpeg',
+            './src/img/16-12-24/arvores-paiva.jpeg',
+            './src/img/16-12-24/parque-paiva.jpeg',
+            './src/img/16-12-24/papai-noel.jpeg'
+        ],
         marcadores: [
             {
                 nome: 'Hotel Costa Mar Recife',
@@ -79,11 +88,17 @@ const viagens = [
         data: '17/12/2024', 
         local: 'Recife - PE', 
         detalhes: `
-            Na manhã seguinte, fui até a Praia da Piedade, que ficava bem em frente ao hotel. Como a maré estava baixa, não havia risco com relação aos tubarões, então pude entrar na água com tranquilidade e aproveitar o mar.
-            À tarde, fui ao Shopping Rio Mar Recife, onde almocei novamente no Laça Burger e passei o resto do tempo explorando as lojas e relaxando pelo shopping.
+            Na manhã seguinte, fui até a Praia da Piedade, que ficava bem em frente ao hotel. Como a maré estava baixa, não havia risco com relação aos tubarões, então pude entrar na água com tranquilidade e aproveitar o mar. 
+
+            À tarde, fui ao Shopping Rio Mar Recife, onde almocei novamente no Laça Burger e passei o resto do tempo explorando as lojas e relaxando pelo shopping. 
+
             À noite, optei por um momento mais tranquilo no quarto do hotel, assistindo a algo e saboreando uma deliciosa pizza.
         `, 
-        imagem: ['imagens/viagem3.jpg'],
+        imagem: [
+            './src/img/17-12-24/praia-piedade.jpeg',
+            './src/img/17-12-24/piedade-horizonte.jpeg',
+            './src/img/17-12-24/vista-shopping.jpeg'
+        ],
         marcadores: [
             {
                 nome: 'Hotel Costa Mar Recife',
@@ -107,8 +122,15 @@ const viagens = [
         data: '18/12/2024', 
         local: 'Recife - PE', 
         detalhes: `
-            Na manhã seguinte, comecei o dia com um delicioso café no Soto Café, uma cafeteria charmosa, decorada de forma aconchegante, oferecendo lanches tanto visualmente atraentes quanto saborosos. Após essa pausa relaxante, segui para o Recife Antigo, onde tive a oportunidade de conhecer o icônico Marco Zero. Ali, visitei a Caixa Cultural, que já foi a sede da Bolsa de Valores e hoje serve como um espaço dedicado a eventos e exposições. No dia da minha visita, estavam expostas diversas pinturas e fotografias, tornando a experiência ainda mais enriquecedora. De lá, também consegui avistar, à distância, o impressionante Parque de Esculturas de Brennand.
-            Quando a hora do almoço chegou, optei pelo restaurante Baba Gula, uma excelente escolha com pratos deliciosos e preços acessíveis. Depois de me deliciar com a comida, continuei explorando o bairro. Visitei a Igreja da Madre de Deus e, em seguida, passei pela charmosa Livraria Jaqueira. Para finalizar a tarde com chave de ouro, tomei um café no The Coffee, perfeito para uma pausa tranquila.
+            Na manhã seguinte, comecei o dia com um delicioso café no Soto Café, uma cafeteria charmosa, decorada de forma aconchegante, oferecendo lanches tanto visualmente atraentes quanto saborosos. 
+            
+            Após essa pausa relaxante, segui para o Recife Antigo, onde tive a oportunidade de conhecer o icônico Marco Zero. Ali, visitei a Caixa Cultural, que já foi a sede da Bolsa de Valores e hoje serve como um espaço dedicado a eventos e exposições. No dia da minha visita, estavam expostas diversas pinturas e fotografias, tornando a experiência ainda mais enriquecedora. De lá, também consegui avistar, à distância, o impressionante Parque de Esculturas de Brennand. 
+
+            Quando a hora do almoço chegou, optei pelo restaurante Babagula, uma excelente escolha com pratos deliciosos e preços acessíveis. Depois de me deliciar com a comida, continuei explorando o bairro. 
+            
+            Visitei a Igreja da Madre de Deus e, em seguida, passei pela charmosa Livraria Jaqueira. 
+            
+            Para finalizar a tarde com chave de ouro, tomei um café no The Coffee, perfeito para uma pausa tranquila.
         `, 
         imagem: ['imagens/viagem4.jpg'],
         marcadores: [
@@ -154,15 +176,18 @@ const viagens = [
         data: '19/12/2024', 
         local: 'Recife - PE', 
         detalhes: `
-            Na manhã de hoje, decidi aproveitar o conforto do hotel, relaxando à beira da piscina e curtindo o clima tranquilo. Já na parte da tarde, embarquei em uma visita ao Instituto Ricardo Brennand, um destino que, apesar de um pouco afastado, se revelou uma experiência incrível. Conhecido como o maior museu de armas brancas da América Latina, o instituto é um verdadeiro castelo, repleto de exposições que vão desde pinturas e esculturas até coleções impressionantes de armas históricas. Passei a tarde inteira explorando aquele majestoso espaço, me maravilhando com sua arquitetura e o vasto acervo.
+            Na manhã de hoje, decidi aproveitar o conforto do hotel, relaxando à beira da piscina e curtindo o clima tranquilo. 
+            
+            Já na parte da tarde, embarquei em uma visita ao Instituto Ricardo Brennand, um destino que, apesar de um pouco afastado, se revelou uma experiência incrível. Conhecido como o maior museu de armas brancas da América Latina, o instituto é um verdadeiro castelo, repleto de exposições que vão desde pinturas e esculturas até coleções impressionantes de armas históricas. Passei a tarde inteira explorando aquele majestoso espaço, me maravilhando com sua arquitetura e o vasto acervo.
+            
             Para encerrar o dia, pedi um lanche artesanal da Firetha, uma escolha deliciosa para a noite.
         `, 
         imagem: ['imagens/viagem5.jpg'],
         marcadores: [
             {
                 nome: 'Hotel Costa Mar Recife',
-                coordenadas: [-8.174127539868136, -34.916439819238526],
-                descricao: 'Hotel Costa Mar Recife'
+                coordenadas: [-8.173931491676221, -34.91642858650923],
+                descricao: 'Hotel beira mar com excelente vista'
             },
             {
                 nome: 'Instituto Ricardo Brennand',
@@ -176,15 +201,16 @@ const viagens = [
         data: '20/12/2024', 
         local: 'Jaboatão dos Guararapes - PE', 
         detalhes: `
-            No meu último dia de viagem, acordei cedo para caminhar pela Praia de Piedade, uma maneira perfeita de iniciar o dia, com os pés na areia e a brisa do mar. Após a caminhada, voltei para o hotel e passei o restante da manhã relaxando na piscina, aproveitando os últimos momentos de tranquilidade antes do check-out.
-            Depois de deixar o hotel, ainda tive a oportunidade de conhecer a Praia de Candeias, onde fiquei até o momento de seguir para o aeroporto. Lá, me despedi das belas paisagens e peguei meu voo de volta para casa, concluindo assim mais uma viagem inesquecível.
+            No meu último dia de viagem, acordei cedo para caminhar pela Praia de Piedade, uma maneira perfeita de iniciar o dia, com os pés na areia e a brisa do mar. Após a caminhada, voltei para o hotel e passei o restante da manhã relaxando na piscina, aproveitando os últimos momentos de tranquilidade antes do check-out. 
+
+            Depois de deixar o hotel, ainda tive a oportunidade de conhecer a Praia de Candeias, onde fiquei até o momento de seguir para o aeroporto. Lá, me despedi das belas paisagens e peguei meu voo de volta para casa, concluindo assim a minha primeira viagem, uma viagem inesquecível.
         `, 
         imagem: ['imagens/viagem6.jpg'],
         marcadores: [
             {
                 nome: 'Hotel Costa Mar Recife',
-                coordenadas: [-8.174127539868136, -34.916439819238526],
-                descricao: 'Hotel Costa Mar Recife'
+                coordenadas: [-8.173931491676221, -34.91642858650923],
+                descricao: 'Hotel beira mar com excelente vista'
             },
             {
                 nome: 'Praia de Piedade',
@@ -207,6 +233,7 @@ if (logo) {
         document.getElementById('home').style.display = 'flex';
         document.getElementById('viagens').style.display = 'block';
         document.getElementById('detalhes-viagem').style.display = 'none';
+        document.getElementById('botao-voltar-container').style.display = 'none'; // ← ocultar botão
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 }
@@ -217,6 +244,7 @@ if (botaoViagensCabecalho) {
         document.getElementById('home').style.display = 'flex';
         document.getElementById('viagens').style.display = 'block';
         document.getElementById('detalhes-viagem').style.display = 'none';
+        document.getElementById('botao-voltar-container').style.display = 'none'; // ← ocultar botão
         document.getElementById('viagens').scrollIntoView({ behavior: 'smooth' });
     };
 }
@@ -226,12 +254,12 @@ function mostrarDetalhesViagem(viagem) {
     document.getElementById('home').style.display = 'none';
     document.getElementById('viagens').style.display = 'none';
     document.getElementById('detalhes-viagem').style.display = 'block';
-    document.getElementById('botao-voltar-container').style.display = 'block';
+    document.getElementById('botao-voltar-container').style.display = 'block'; // ← mostrar botão
+
     document.getElementById('detalhes-titulo').textContent = viagem.nome;
     document.getElementById('detalhes-data').textContent = viagem.data;
     document.getElementById('detalhes-local').textContent = viagem.local;
     document.getElementById('detalhes-texto').innerHTML = viagem.detalhes;
-
 
     const colunaEsquerda = document.getElementById('imagens-esquerda');
     const colunaDireita = document.getElementById('imagens-direita');
@@ -245,20 +273,16 @@ function mostrarDetalhesViagem(viagem) {
         const img = document.createElement('img');
         img.src = imagem;
         img.alt = viagem.nome;
-    
-        // Aplica espaçamento crescente acima da imagem
-        img.style.marginTop = `${index * 100}px`; // 20px por nível de "escada"
-    
+        img.style.marginTop = `${index * 100}px`;
+
         if (index % 2 === 0) {
             colunaEsquerda.appendChild(img);
         } else {
             colunaDireita.appendChild(img);
         }
     });
-    
 
-
-    atualizarMapaComViagem(viagem); // ✅ Chamada da função corrigida
+    atualizarMapaComViagem(viagem);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 

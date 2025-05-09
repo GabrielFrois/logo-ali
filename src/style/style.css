@@ -81,7 +81,7 @@ body {
 }
 
 .texto p {
-    font-size: 18px;
+    font-size: 22px;
     color: #333;
     line-height: 1.6;
 }
@@ -117,6 +117,7 @@ body {
     color: black;
     text-align: center;
     margin: 30px 0 20px 0;
+    margin-bottom: 5px;
 }
 
 /* Lista de viagens */
@@ -192,7 +193,7 @@ body {
 }
 
 #detalhes-viagem #detalhes-texto {
-    font-size: 24px; /* Altere aqui para o tamanho desejado */
+    font-size: 22px; /* Altere aqui para o tamanho desejado */
     line-height: 1.6;
     color: #333;
     text-align: justify;
