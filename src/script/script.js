@@ -132,7 +132,15 @@ const viagens = [
             
             Para finalizar a tarde com chave de ouro, tomei um café no The Coffee, perfeito para uma pausa tranquila.
         `, 
-        imagem: ['imagens/viagem4.jpg'],
+        imagem: [
+            './src/img/18-12-24/soto-cafe.jpeg',
+            './src/img/18-12-24/letreiro-recife.jpeg',
+            './src/img/18-12-24/caixa-cultural.jpeg',
+            './src/img/18-12-24/exposicao-caixa-cultural.jpeg',
+            './src/img/18-12-24/igreja.jpeg',
+            './src/img/18-12-24/livraria.jpeg',
+            './src/img/18-12-24/the-coffee.jpeg'
+        ],
         marcadores: [
             {
                 nome: 'Soto Café',
@@ -165,9 +173,9 @@ const viagens = [
                 descricao: 'Livraria Jaqueira'
             },
             {
-                nome: 'The Coffe',
+                nome: 'The Coffee',
                 coordenadas: [-8.05857893774096, -34.8702537053737],
-                descricao: 'The Coffe'
+                descricao: 'The Coffee'
             }
         ]
     },
@@ -182,7 +190,13 @@ const viagens = [
             
             Para encerrar o dia, pedi um lanche artesanal da Firetha, uma escolha deliciosa para a noite.
         `, 
-        imagem: ['imagens/viagem5.jpg'],
+        imagem: [
+            './src/img/19-12-24/entrada-instituto.jpeg',
+            './src/img/19-12-24/estatua.jpeg',
+            './src/img/19-12-24/carruagem.jpeg',
+            './src/img/19-12-24/cristo.jpeg',
+            './src/img/19-12-24/armas.jpeg'
+        ],
         marcadores: [
             {
                 nome: 'Hotel Costa Mar Recife',
@@ -205,7 +219,10 @@ const viagens = [
 
             Depois de deixar o hotel, ainda tive a oportunidade de conhecer a Praia de Candeias, onde fiquei até o momento de seguir para o aeroporto. Lá, me despedi das belas paisagens e peguei meu voo de volta para casa, concluindo assim a minha primeira viagem, uma viagem inesquecível.
         `, 
-        imagem: ['imagens/viagem6.jpg'],
+        imagem: [
+            './src/img/20-12-24/piedade.jpeg',
+            './src/img/20-12-24/candeias.jpeg'
+        ],
         marcadores: [
             {
                 nome: 'Hotel Costa Mar Recife',
