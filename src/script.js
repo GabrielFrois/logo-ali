@@ -9,9 +9,9 @@ const viagens = [
             
             De lá, embarquei em um voo de aproximadamente três horas com destino ao Aeroporto de Recife. 
  
-            Ao chegar, me hospedei em um hotel à beira-mar, com uma vista deslumbrante para as águas da Praia de Piedade. 
+            Ao chegar, me hospedei no Hotel Costa Mar Recife, um hotel à beira-mar que possui uma visão deslumbrante para as águas da Praia de Piedade. 
 
-            À noite, aproveitei para visitar a famosa feirinha de Boa Viagem, caminhei pelo calçadão e explorei o Parque Dona Lindu, encerrando o dia com a brisa agradável do litoral pernambucano.
+            À noite, aproveitei para visitar a famosa feirinha de Boa Viagem, onde caminhei pelo calçadão observando o mar noturno e explorei o Parque Dona Lindu, encerrando o dia com a brisa agradável do litoral pernambucano.
         `,
         imagem: [
             './src/img/15-12-24/vista-aviao.jpeg',
@@ -41,13 +41,13 @@ const viagens = [
         data: '16/12/2024', 
         local: 'Jaboatão dos Guararapes - PE', 
         detalhes: `
-            Na manhã de hoje, fui até a Reserva do Paiva, onde tive a oportunidade de explorar uma praia deslumbrante, rodeada por recifes belíssimos em todas as direções. A água estava calma e cristalina, criando o ambiente perfeito para passar a manhã toda. 
+            Na manhã de hoje, fui até a Reserva do Paiva, onde tive a oportunidade de explorar uma praia deslumbrante, rodeada por recifes belíssimos em todas as direções, compondo uma paisagem maravilhosa. A água estava calma e cristalina, criando o ambiente perfeito para passar a manhã toda. 
             
-            No início da tarde, aproveitei para fazer uma caminhada pelo Parque da Lagoa, também localizado na Reserva do Paiva. 
+            No início da tarde, aproveitei para conhecer o Parque da Lagoa, também localizado na Reserva do Paiva, onde pude fazer uma caminhada calma e relaxante ao redor de um lago muito bonito cercado de árvores. Havia placas falando sobre a presença de jacaés no lago mas infelizmente não vi nenhum, espero vê-los em uma próxima oportunidade.
 
-            Mais tarde, almocei no shopping de Jaboatão, onde experimentei um lanche de coração de galinha da franquia local Laça Burguer, uma verdadeira delícia. 
+            Mais tarde, almocei no shopping de Jaboatão, onde experimentei um lanche de coração de galinha da franquia local Laça Burguer, um dos melhores lanches que já provei, recomendo. 
 
-            Para finalizar o dia, fui ao restaurante e bar Caricatura, onde me deliciei com um rodízio de pizzas. Uma noite perfeita para encerrar o dia!
+            Para finalizar o dia, fui ao restaurante e bar Caricatura, onde pude aproveitar um rodízio de pizzas com amigos que acabara de conhecer. Uma noite perfeita para encerrar o dia!
         `, 
         imagem: [
             './src/img/16-12-24/praia-paiva.jpeg',
@@ -88,11 +88,11 @@ const viagens = [
         data: '17/12/2024', 
         local: 'Recife - PE', 
         detalhes: `
-            Na manhã seguinte, fui até a Praia da Piedade, que ficava bem em frente ao hotel. Como a maré estava baixa, não havia risco com relação aos tubarões, então pude entrar na água com tranquilidade e aproveitar o mar. 
+            Na manhã seguinte, fui até a Praia da Piedade, que é a praia que podia observar da varanda do meu quarto. Como a maré estava baixa, não havia risco com relação aos tubarões, então pude entrar na água com tranquilidade e aproveitar o mar, que por conta da maré baixa, os recifes a vista melhoravam ainda mais a paisagem. 
 
             À tarde, fui ao Shopping Rio Mar Recife, onde almocei novamente no Laça Burger e passei o resto do tempo explorando as lojas e relaxando pelo shopping. 
 
-            À noite, optei por um momento mais tranquilo no quarto do hotel, assistindo a algo e saboreando uma deliciosa pizza.
+            À noite, optei por um momento mais tranquilo no quarto do hotel, assistindo algo e saboreando uma deliciosa pizza.
         `, 
         imagem: [
             './src/img/17-12-24/praia-piedade.jpeg',
@@ -122,15 +122,17 @@ const viagens = [
         data: '18/12/2024', 
         local: 'Recife - PE', 
         detalhes: `
-            Na manhã seguinte, comecei o dia com um delicioso café no Soto Café, uma cafeteria charmosa, decorada de forma aconchegante, oferecendo lanches tanto visualmente atraentes quanto saborosos. 
+            Durante a manhã, comecei o dia com um delicioso café no Soto Café, uma cafeteria charmosa, decorada de forma aconchegante, oferecendo lanches tanto visualmente atraentes quanto saborosos, um excelente lugar para conhecer. 
             
-            Após essa pausa relaxante, segui para o Recife Antigo, onde tive a oportunidade de conhecer o icônico Marco Zero. Ali, visitei a Caixa Cultural, que já foi a sede da Bolsa de Valores e hoje serve como um espaço dedicado a eventos e exposições. No dia da minha visita, estavam expostas diversas pinturas e fotografias, tornando a experiência ainda mais enriquecedora. De lá, também consegui avistar, à distância, o impressionante Parque de Esculturas de Brennand. 
+            Após esse café relaxante, segui para o Recife Antigo, onde tive a oportunidade de conhecer o icônico Marco Zero. Ali, visitei a Caixa Cultural, que já foi a sede da Bolsa de Valores e hoje serve como um espaço dedicado a eventos e exposições. No dia da minha visita, estavam expostas diversas pinturas e fotografias, tornando a experiência ainda mais enriquecedora. 
+            
+            Do Marco Zero, também consegui avistar, à distância, o impressionante Parque de Esculturas de Brennand. 
 
-            Quando a hora do almoço chegou, optei pelo restaurante Babagula, uma excelente escolha com pratos deliciosos e preços acessíveis. Depois de me deliciar com a comida, continuei explorando o bairro. 
+            Quando a hora do almoço chegou, optei pelo restaurante Babagula, uma excelente escolha com pratos deliciosos e preços muito bons. Depois de aproveitar a comida, continuei explorando o bairro. 
             
-            Visitei a Igreja da Madre de Deus e, em seguida, passei pela charmosa Livraria Jaqueira. 
+            Visitei a Igreja da Madre de Deus, uma igreja construída no século XVIII com seu interior todo ornamentado e, em seguida, passei pela charmosa Livraria Jaqueira, um espaço enorme com muita coisa para ver. 
             
-            Para finalizar a tarde com chave de ouro, tomei um café no The Coffee, perfeito para uma pausa tranquila.
+            Para finalizar a tarde daquele dia incrível, tomei um café no The Coffee, perfeito para uma pausa tranquila.
         `, 
         imagem: [
             './src/img/18-12-24/soto-cafe.jpeg',
@@ -184,11 +186,11 @@ const viagens = [
         data: '19/12/2024', 
         local: 'Recife - PE', 
         detalhes: `
-            Na manhã de hoje, decidi aproveitar o conforto do hotel, relaxando à beira da piscina e curtindo o clima tranquilo. 
+            Na manhã desse dia, decidi aproveitar o conforto do hotel, relaxando à beira da piscina e curtindo o clima tranquilo. 
             
-            Já na parte da tarde, embarquei em uma visita ao Instituto Ricardo Brennand, um destino que, apesar de um pouco afastado, se revelou uma experiência incrível. Conhecido como o maior museu de armas brancas da América Latina, o instituto é um verdadeiro castelo, repleto de exposições que vão desde pinturas e esculturas até coleções impressionantes de armas históricas. Passei a tarde inteira explorando aquele majestoso espaço, me maravilhando com sua arquitetura e o vasto acervo.
+            Já na parte da tarde, fui para uma visita ao Instituto Ricardo Brennand, um destino que, apesar de ser um pouco afastado, se revelou uma experiência incrível. Conhecido como o maior museu de armas brancas da América Latina, o instituto é um verdadeiro castelo, repleto de exposições que vão desde pinturas e esculturas até coleções impressionantes de armas históricas. Passei a tarde inteira conhecendo aquele majestoso espaço, me maravilhando com sua arquitetura e o vasto acervo e, com certeza, vou visitar esse lugar novamente no futuro.
             
-            Para encerrar o dia, pedi um lanche artesanal da Firetha, uma escolha deliciosa para a noite.
+            Para encerrar o dia, pedi um lanche artesanal e uma porção de fritas da Firetha, uma ótima escolha para encerrar a noite enquanto assistia uma série no quarto do hotel.
         `, 
         imagem: [
             './src/img/19-12-24/entrada-instituto.jpeg',
@@ -217,7 +219,7 @@ const viagens = [
         detalhes: `
             No meu último dia de viagem, acordei cedo para caminhar pela Praia de Piedade, uma maneira perfeita de iniciar o dia, com os pés na areia e a brisa do mar. Após a caminhada, voltei para o hotel e passei o restante da manhã relaxando na piscina, aproveitando os últimos momentos de tranquilidade antes do check-out. 
 
-            Depois de deixar o hotel, ainda tive a oportunidade de conhecer a Praia de Candeias, onde fiquei até o momento de seguir para o aeroporto. Lá, me despedi das belas paisagens e peguei meu voo de volta para casa, concluindo assim a minha primeira viagem, uma viagem inesquecível.
+            Depois de deixar o hotel, ainda tive a oportunidade de conhecer a Praia de Candeias, onde fiquei até o momento de seguir para o aeroporto. Lá, me despedi das belas paisagens e peguei meu voo de volta para casa, concluindo assim a minha primeira viagem, uma viagem incrível e inesquecível.
         `, 
         imagem: [
             './src/img/20-12-24/piedade.jpeg',
@@ -290,7 +292,7 @@ function mostrarDetalhesViagem(viagem) {
         const img = document.createElement('img');
         img.src = imagem;
         img.alt = viagem.nome;
-        img.style.marginTop = `${index * 100}px`;
+        img.style.marginTop = `${index * 200}px`;
 
         if (index % 2 === 0) {
             colunaEsquerda.appendChild(img);
